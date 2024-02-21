@@ -3,7 +3,71 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: hsl(30, 38%, 92%);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
+
+@media only screen and (min-width: 1440px) {
+    body {
+    width: 1440px ;
+    }
+}
+@media only screen and (max-width: 376px) {
+    body {
+    width: 375px ;
+    padding: 15px;
+    }
+    #contain-perfume-box {
+        display: flex;
+        flex-direction: column;
+        max-width: 370px;
+        border-radius: 20px;
+    }
+    #image-product-mobile {
+        width: 100%;
+        min-height: 350px;
+        border-radius: 20px 20px 0 0;
+    }
+    #image-product-desktop {
+        display: none;
+    }
+    #Contain-prices {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 36%;
+    }
+}
+@media only screen and (min-width: 377px) {
+   
+    #Contain-prices {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 25%;
+    }
+    #contain-perfume-box { 
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+        border-radius: 20px;
+    }
+    #image-product-desktop {
+        width: 50%;
+        min-height: 350px;
+        border-radius: 20px 0 0 20px;
+    }
+    #image-product-mobile {
+        display: none;
+    }
+}
+
 /*Contain*/
 
 
@@ -17,18 +81,74 @@ body{
     text-align: left;
 }
 
-#top-text-styling{}
+#top-text-styling{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+}
 
-#title-text-styling{}
+#title-text-styling{
+    font-size: 35px;
+    line-height: 35px;
+}
 
-#main-text-styling{}
+#main-text-styling{
+    word-spacing: 3px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
 
 /*Prices*/
-#Contain-prices{}
+#now-price-text{
+    color: hsl(158, 36%, 37%);
+}
 
-#now-price-text{}
-
-#before-price-text{}
+#before-price-text{
+    font-size: 12px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
 
 /*Button*/
-#button-styling
+#button-styling {
+    border: none;
+    background-color: hsl(158, 36%, 37%) ;
+    color: hsl(30, 38%, 92%);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#button-styling:hover {
+    background-color: hsl(212, 21%, 14%) ;
+    cursor: pointer;
+}
+#cart-picture-button {
+    margin-right: 12px;
+}
+
+/*Font*/
+.mon-class {
+    font-family: "Montserrat", sans-serif;
+    word-wrap: break-word;
+}
+.frau-class {
+    font-family: "Fraunces", serif;
+    word-wrap: break-word;
+}
+
+/*attribution*/
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
